@@ -1,0 +1,68 @@
+<scene>
+  <camera>
+    <origin>0 0 -2</origin>
+    <z>0 0 -1</z>
+    <y>0 1 0</y>
+    <yfov>45</yfov>
+    <xfov>45</xfov>
+    <xResolution>512</xResolution>
+    <yResolution>512</yResolution>
+  </camera>
+  <lights>
+    <light class="PointLight">
+      <intensity>0.8 0.8 0.8</intensity>
+      <position>2 4 2</position>
+    </light>
+    <light class="PointLight">
+      <intensity>0.2 0.2 0.2</intensity>
+      <position>0 0 5</position>
+    </light>
+  </lights>
+  <hierarchyRoot class="Transform">
+    <translation>0 0 0</translation>
+    <rotation>0 0 0</rotation>
+    <scale>1 1 1</scale>
+  	<children>
+  	  <child class="Mesh">
+  	    <material class="Lambert">
+  	      <diffuse>1 0.8 0.8</diffuse>
+  	    </material>
+        <quads>false</quads>
+        <vertexPos>
+          0 0 0
+          1 0 0
+          0 1 0
+          0 0 0
+          1 0 0
+          0 0 1
+          0 0 0
+          0 1 0
+          0 0 1
+          1 0 0
+          0 1 0
+          0 0 1
+        </vertexPos>
+        <vertexNormal>
+          0 0 -1
+          0 0 -1
+          0 0 -1
+          0 -1 0
+          0 -1 0
+          0 -1 0
+          -1 0 0
+          -1 0 0
+          -1 0 0
+          1 1 1
+          1 1 1
+          1 1 1
+        </vertexNormal>
+        <faceIds>
+           0  2  1
+           3  4  5
+           6  8  7
+           9  10  11
+        </faceIds>
+  	  </child>
+  	</children>
+  </hierarchyRoot>
+</scene>
